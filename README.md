@@ -1,1 +1,44 @@
-# Prediction-churn-client
+## Contexte
+Une entreprise de télécommunications souhaite anticiper le départ de ses clients (churn) pour mettre en place des actions de rétention ciblées. L'objectif est de construire un modèle prédictif capable d'identifier les clients à risque de résiliation dans les 30 prochains jours, afin de leur proposer des offres personnalisées avant qu'ils ne partent.
+
+## Objectifs
+- Identifier les facteurs principaux qui influencent le départ des clients
+- Prédire la probabilité de churn pour chaque client
+- Proposer un score de risque pour prioriser les actions marketing
+
+#### [Télécharger les données](https://github.com/Hines98/Analyse-donnees-RH/blob/4ccd054ddd2f42c1ac39d33b73e2062ebae3942c/HRData.csv)
+#### [Télécharger la version PBIx du rapport](https://github.com/Hines98/Analyse-donnees-RH/blob/3db3861efafe8bb2ca8977296b1bbec956441594/Report_HR_Data.pbix)
+#### [Télécharger le tableau de bord sour format PDF](https://github.com/Hines98/Analyse-donnees-RH/blob/3147568b18126d3accba436bbd87a719f309ccc8/Report_HR_Data.pdf)
+
+
+## Synthèse
+L'analyse a permis de développer un système de prédiction capable d'identifier à l'avance les clients qui risquent de quitter l'entreprise. Après avoir testé et comparé plusieurs approches différentes, la solution la plus efficace détecte correctement quatre clients sur cinq qui vont effectivement partir, soit 298 clients identifiés sur les 374 qui résiliront réellement leur abonnement dans les données analysées.
+
+Cette performance représente une amélioration considérable par rapport aux premières versions du système qui ne détectaient qu'un client sur deux. Concrètement, le nombre de clients à risque qui passaient inaperçus est passé de 180 à seulement 76, soit une réduction de plus de la moitié. Ces clients manqués représentent un véritable coût pour l'entreprise puisqu'ils partiront sans avoir bénéficié d'aucune action pour les retenir. Le système fait parfois des erreurs en identifiant comme étant à risque des clients qui resteront finalement fidèles, générant ainsi des alertes inutiles. Cependant, ce compromis a été volontairement accepté car l'objectif prioritaire est de ne laisser échapper aucun client réellement à risque. En effet, proposer une offre de rétention à un client fidèle coûte peu à l'entreprise, alors que perdre un client qui n'a pas été détecté représente une perte de revenus bien plus importante sur le long terme.
+
+L'analyse du système de prédiction révèle de manière très claire quels sont les facteurs qui influencent le plus la décision des clients de partir ou de rester. 
+- Le type d'engagement contractuel domine absolument tous les autres éléments en représentant à lui seul plus de 60% du pouvoir de prédiction du système. Les chiffres sont éloquents : parmi les clients sans engagement (contrat mensuel), 43% finissent par partir, alors que chez ceux engagés sur deux ans, seulement 3% quittent l'entreprise. Le risque de départ est donc quatorze fois plus élevé pour un client sans engagement, faisant de la durée du contrat le levier de rétention de loin le plus puissant dont dispose l'entreprise.
+- Le type de service internet souscrit constitue le deuxième facteur en importance, pesant environ 12% dans la décision de prédiction. Ce qui est particulièrement préoccupant, c'est que l'offre fibre optique, censée être le service premium de l'entreprise, présente un taux de départ catastrophique de 42%. Cela signifie que plus de deux clients sur cinq qui ont choisi cette offre haut de gamme finissent par résilier, suggérant soit des problèmes de qualité de service, soit un prix perçu comme trop élevé par rapport à la valeur reçue, soit une concurrence particulièrement agressive sur ce segment.
+- L'analyse a également permis de créer un indicateur de profil à très haut risque qui combine trois caractéristiques dangereuses : un contrat mensuel, une ancienneté de moins d'un an et un paiement par chèque électronique. Cet indicateur synthétique s'est révélé très pertinent puisqu'il se classe en quatrième position parmi tous les facteurs pris en compte par le système. Les clients correspondant à ce profil présentent un taux de départ de 63%, soit près de deux sur trois, alors que les autres clients ne partent qu'à 21%. Cette identification d'un segment ultra-risque facilite grandement le ciblage des actions marketing les plus intensives.
+- Les services additionnels souscrits par les clients jouent également un rôle protecteur significatif. Les clients qui ont ajouté des options comme le streaming de films ou de télévision à leur abonnement de base ont tendance à rester plus fidèles, ces services représentant chacun environ 3% du pouvoir de prédiction. Cela confirme que la richesse et la diversité de l'offre créent de la valeur perçue et renforcent l'attachement du client à l'opérateur. À l'inverse, les clients qui se contentent de l'offre de base minimale sont beaucoup plus volatiles.
+- Les facteurs comme l'ancienneté du client et le montant de sa facture mensuelle, bien qu'importants, jouent un rôle moins décisif qu'on aurait pu l'imaginer. L'ancienneté compte pour environ 3% et le montant facturé pour moins de 1% dans les prédictions du système. Cette importance relative plus faible suggère que ces aspects sont en grande partie déjà capturés et synthétisés par les autres facteurs plus complexes que le système prend en compte.
+
+Au-delà de sa capacité à prédire correctement les départs, le système développé constitue un véritable outil de travail directement utilisable par les équipes commerciales et marketing. Chaque client de la base se voit attribuer un score de risque exprimé en pourcentage de zéro à cent, permettant de mesurer précisément le niveau de danger et d'adapter finement les actions à mener. Cette granularité fine offre une grande flexibilité dans la personnalisation des offres de rétention.
+
+Pour faciliter l'utilisation opérationnelle, ces scores continus ont été regroupés en quatre catégories de risque bien distinctes. Les clients en situation CRITIQUE, avec un score supérieur à 70%, nécessitent une intervention humaine immédiate dans les quarante-huit heures. Pour ces clients, l'entreprise doit mobiliser ses meilleurs conseillers et proposer des remises importantes pouvant aller jusqu'à la moitié de la facture pendant plusieurs mois, ainsi que des passages gratuits vers des contrats plus longs. L'urgence absolue s'impose car ces clients sont sur le point de partir.
+
+Les clients classés à risque ÉLEVÉ, avec un score entre 50 et 70%, justifient un contact proactif dans la semaine qui suit l'identification. Les offres proposées peuvent être un peu moins agressives, incluant des réductions modérées sur quelques mois et des services additionnels gratuits comme le support technique ou la sécurité en ligne. L'objectif est de renouer le dialogue avant que la situation ne se dégrade davantage et de démontrer au client qu'on se soucie de lui.
+
+Pour les clients en risque MODÉRÉ, avec un score entre 30 et 50%, des actions moins intrusives mais néanmoins attentives sont recommandées. Des campagnes par email personnalisées, des enquêtes de satisfaction pour identifier d'éventuels problèmes naissants, et des offres de services complémentaires constituent une approche adaptée. Il s'agit davantage de prévention que d'intervention d'urgence.
+
+Enfin, les clients à risque FAIBLE, avec un score inférieur à 30%, ne requièrent qu'un suivi de routine avec les programmes de fidélité standards de l'entreprise. Ces clients satisfaits et fidèles peuvent être contactés pour des offres d'amélioration de leur forfait mais sans pression particulière, l'objectif étant simplement de maintenir leur satisfaction élevée.
+
+Ce système de catégorisation a été appliqué à l'ensemble des sept mille clients de la base, créant ainsi une liste complète, priorisée et immédiatement actionnable. Les équipes commerciales savent exactement qui contacter en premier, avec quel niveau d'urgence, et quel type d'offre proposer. Cette clarté opérationnelle transforme les prédictions statistiques en actions business concrètes et mesurables.
+  
+Pour retenir plus longtemps les séniors :
+- Offrir des opportunités de mentorat ou de transition vers des postes moins exigeants
+- Valoriser leur expertise et leur expérience au sein de l’entreprise
+
+Pour les départements avec turnover élevé :
+- Revoir les conditions de travail et la charge dans ces services
+- Proposer des parcours d'évolution attractifs
