@@ -9,8 +9,6 @@ Une entreprise de télécommunications souhaite anticiper le départ de ses clie
 #### [Télécharger les données](https://github.com/Hines98/Prediction-churn-client/blob/main/Telco-Customer-Churn.csv)
 #### [Télécharger le code danalyse](https://github.com/Hines98/Prediction-churn-client/blob/main/Code_python.ipynb)
 #### [Télécharger le rapport d'analyse](https://github.com/Hines98/Prediction-churn-client/blob/main/Rapport_Code_%26_Resultats.pdf)
-#### [Télécharger le code de mise en production](https://github.com/Hines98/Prediction-churn-client/blob/main/Rapport_Code_%26_Resultats.pdf)
-
 
 ## Synthèse
 L'analyse a permis de développer un système de prédiction capable d'identifier à l'avance les clients qui risquent de quitter l'entreprise. Après avoir testé et comparé plusieurs approches différentes, la solution la plus efficace détecte correctement quatre clients sur cinq qui vont effectivement partir, soit 298 clients identifiés sur les 374 qui résiliront réellement leur abonnement dans les données analysées.
