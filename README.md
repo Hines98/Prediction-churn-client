@@ -34,11 +34,3 @@ Pour les clients en risque MODÉRÉ, avec un score entre 30 et 50%, des actions 
 Enfin, les clients à risque FAIBLE, avec un score inférieur à 30%, ne requièrent qu'un suivi de routine avec les programmes de fidélité standards de l'entreprise. Ces clients satisfaits et fidèles peuvent être contactés pour des offres d'amélioration de leur forfait mais sans pression particulière, l'objectif étant simplement de maintenir leur satisfaction élevée.
 
 Ce système de catégorisation a été appliqué à l'ensemble des sept mille clients de la base, créant ainsi une liste complète, priorisée et immédiatement actionnable. Les équipes commerciales savent exactement qui contacter en premier, avec quel niveau d'urgence, et quel type d'offre proposer. Cette clarté opérationnelle transforme les prédictions statistiques en actions business concrètes et mesurables.
-  
-Pour retenir plus longtemps les séniors :
-- Offrir des opportunités de mentorat ou de transition vers des postes moins exigeants
-- Valoriser leur expertise et leur expérience au sein de l’entreprise
-
-Pour les départements avec turnover élevé :
-- Revoir les conditions de travail et la charge dans ces services
-- Proposer des parcours d'évolution attractifs
