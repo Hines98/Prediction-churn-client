@@ -6,9 +6,10 @@ Une entreprise de télécommunications souhaite anticiper le départ de ses clie
 - Prédire la probabilité de churn pour chaque client
 - Proposer un score de risque pour prioriser les actions marketing
 
-#### [Télécharger les données](https://github.com/Hines98/Analyse-donnees-RH/blob/4ccd054ddd2f42c1ac39d33b73e2062ebae3942c/HRData.csv)
-#### [Télécharger la version PBIx du rapport](https://github.com/Hines98/Analyse-donnees-RH/blob/3db3861efafe8bb2ca8977296b1bbec956441594/Report_HR_Data.pbix)
-#### [Télécharger le tableau de bord sour format PDF](https://github.com/Hines98/Analyse-donnees-RH/blob/3147568b18126d3accba436bbd87a719f309ccc8/Report_HR_Data.pdf)
+#### [Télécharger les données](https://github.com/Hines98/Prediction-churn-client/blob/main/Telco-Customer-Churn.csv)
+#### [Télécharger le code danalyse](https://github.com/Hines98/Prediction-churn-client/blob/main/Code_python.ipynb)
+#### [Télécharger le rapport d'analyse](https://github.com/Hines98/Prediction-churn-client/blob/main/Rapport_Code_%26_Resultats.pdf)
+#### [Télécharger le code de mise en production](https://github.com/Hines98/Prediction-churn-client/blob/main/Rapport_Code_%26_Resultats.pdf)
 
 
 ## Synthèse
